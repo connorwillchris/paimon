@@ -1,0 +1,61 @@
+{
+    "cleric": {
+        "requirements": null,
+        "prime_requisiste": 2,
+        "hit_dice": "!d6",
+        "max_level": 14,
+        "armor": ["any"],
+        "weapons": ["any"],
+        "languages": [
+            "alignment", "common"
+        ],
+        "saving_throws": [
+            11, 12, 14, 16, 15
+        ]
+    },
+    "fighter": {
+        "requirements": null,
+        "prime_requisiste": 0,
+        "hit_dice": "!d8",
+        "max_level": 14,
+        "armor": ["any"],
+        "weapons": ["any"],
+        "languages": [
+            "alignment", "common"
+        ],
+        "saving_throws": [
+            12, 13, 14, 15, 16
+        ]
+    },
+    "magic_user": {
+        "requirements": null,
+        "prime_requisiste": 1,
+        "hit_dice": "!d4",
+        "max_level": 14,
+        "armor": null,
+        "weapons": ["dagger"],
+        "languages": [
+            "alignment", "common"
+        ],
+        "saving_throws": [
+            13, 14, 14, 16, 15
+        ]
+    },
+    "thief": {
+        "requirements": null,
+        "prime_requisiste": 3,
+        "hit_dice": "!d4",
+        "max_level": 14,
+        "armor": [
+            "leather",
+            "no_shields"
+        ],
+        "weapons": ["any"],
+        "languages": [
+            "alignment", "common"
+        ],
+        "saving_throws": [
+            13, 14, 13, 16, 15
+        ]
+    }
+}
