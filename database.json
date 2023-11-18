@@ -1,10 +1,11 @@
 {
-    "char_sheets": {
+    "shadowdark": {
+        "row": 2,
         "cols": [
-            "ID", "name", "class", "stats", "saving_throws",
-            "hit_dice", "max_hp", "current_hp", "level",
-            "xp", "languages"
-        ],
-        "current_row": 1
+            "stats", "background", "ancestry", "class",
+            "alignment", "title", "languages", "diety",
+            "gear", "gear_slots", "name", "level", "xp",
+            "current_hp", "max_hp"
+        ]
     }
 }

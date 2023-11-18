@@ -1,0 +1,112 @@
+{
+    "fighter": {
+        "weapons": ["all"],
+        "armor": ["all"],
+        "hp": "!d8",
+        "languages": null,
+        "features": [
+            "hauler", "weapon_mastery", "grit"
+        ],
+        "trained": null,
+        "talents_table": {
+            "2": "Gain Weapon Mastery with one additional weapon type.",
+            "3-6": "+1 to melee and ranged attacks.",
+            "7-9": "+2 to Strength, Dexterity, or Constitution stat.",
+            "10-11": "Choose one kind of armor. You get +1 AC from that armor.",
+            "12": "Choose a talent or +2 points to distribute to stats."
+        },
+        "spells_known": null
+    },
+    "priest": {
+        "weapons": [
+            "club", "crossbow", "dagger", "mace",
+            "longsword", "staff", "warhammer"
+        ],
+        "armor": ["all"],
+        "hp": "!d6",
+        "languages": [
+            "celestial",
+            "diabolic",
+            "primordial"
+        ],
+        "features": [
+            "turn_undead", "diety", "spellcasting"
+        ],
+        "trained": null,
+        "talents_table": {
+            "2": "Gain advantage on casting one spell you know.",
+            "3-6": "+1 to melee or ranged attacks.",
+            "7-9": "+1 to priest spellcasting checks.",
+            "10-11": "+2 to Strength or Wisdom stat.",
+            "12": "Choose a talent or +2 points to distribute to stats."
+        },
+        "spells_known": [
+            [2,0,0,0,0],
+            [3,0,0,0,0],
+            [3,1,0,0,0],
+            [3,2,0,0,0],
+            [3,2,1,0,0],
+            [3,2,2,0,0],
+            [3,3,2,1,0],
+            [3,3,2,2,0],
+            [3,3,2,2,1],
+            [3,3,3,2,2]
+        ]
+    },
+    "thief": {
+        "weapons": ["club", "crossbow", "dagger", "shortbow", "shortsword"],
+        "armor": ["leather", "mithral_chainmail"],
+        "hp": "!d4",
+        "languages": null,
+        "features": [
+            "backstab",
+            "thievery"
+        ],
+        "trained": [
+            "Climbing", "Sneaking and hiding",
+            "Applying Disguises",
+            "Finding and disabling traps",
+            "delicate tasks such as picking pockets and opening locks"
+        ],
+        "talents_table": {
+            "2": "Gain advantage on initiative rolls (reroll if duplicate).",
+            "3-5": "Your backstab deals +1 dice of damage.",
+            "6-9": "+2 to Strength, Dexterity, or Charisma stat.",
+            "10-11": "+1 to melee or ranged attacks.",
+            "12": "Choose a talent or +2 points to distribute to stats."
+        },
+        "spells_known": null
+    },
+    "wizard": {
+        "weapons": ["dagger", "staff"],
+        "armor": ["none"],
+        "hp": "!d4",
+        "languages": {
+            "common": 2,
+            "rare": 2
+        },
+        "features": [
+            "learning_spells", "spellcasting"
+        ],
+        "trained": null,
+        "talents_table": {
+            "2": "Make one random magic item (see GM Quickstart Guide).",
+            "3-7": "+2 to Intelligence stat or +1 to wizard spellcasting checks.",
+            "8-9": "Gain advantage on casting one spell you know.",
+            "10-11": "Learn one additional wizard spell of any tier you know.",
+            "12": "Choose a talent or +2 points to distribute to stats."
+        },
+        "spells_known": [
+            [3,0,0,0,0],
+            [4,0,0,0,0],
+            [4,1,0,0,0],
+            [4,2,0,0,0],
+            [4,2,1,0,0],
+            [4,3,2,0,0],
+            [4,3,2,1,0],  
+            [4,4,2,2,0],
+            [4,4,3,2,1],
+            [4,4,4,2,2]
+        ]
+    }
+}

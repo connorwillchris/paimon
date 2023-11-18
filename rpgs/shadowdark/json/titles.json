@@ -1,0 +1,57 @@
+{
+    "fighter": {
+        "L": [
+            "squire", "cavalier", "knight", "thane",
+            "lord/lady"
+        ],
+        "C": [
+            "knave", "bandit", "slayer", "reaver",
+            "warlord"
+        ],
+        "N": [
+            "warrior", "barbarian", "battlerager",
+            "warchief", "chieftain"
+        ]
+    },
+    "priest": {
+        "L": [
+            "acolyte", "crusader", "templar",
+            "champion", "paladin"
+        ],
+        "C": [
+            "initiate", "zealot", "cultist",
+            "scourge", "chaos knight"
+        ],
+        "N": [
+            "seeker", "invoker", "haruspex", "mystic",
+            "oracle"
+        ]
+    },
+    "thief": {
+        "L": [
+            "footpad", "burglar", "rook", "underboss",
+            "boss"
+        ],
+        "C": [
+            "thug", "cutthroat", "shadow", "assassin",
+            "wraith"
+        ],
+        "N": [
+            "robber", "outlaw", "rogue", "renegade",
+            "bandit king/queen"
+        ]
+    },
+    "wizard": {
+        "L": [
+            "apprentice", "coujurer", "arcanist",
+            "mage", "archmage"
+        ],
+        "C": [
+            "adept", "channeler", "witch/warlock",
+            "diabolist", "sorcerer"
+        ],
+        "N": [
+            "shaman", "seer", "warden", "sage", "druid"
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "common": [
+        "common", "dwarvish", "elvish",
+        "giant", "goblin", "merran", "orcish",
+        "reptilian", "sylvan", "thanian"
+    ],
+    "rare": [
+        "celestial", "diabolic",
+        "draconic", "primordial"
+    ]
+}

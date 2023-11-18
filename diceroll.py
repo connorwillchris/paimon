@@ -1,8 +1,12 @@
 import random
 
-def roll(d: str):
+def roll(d: str = 'd20'):
     total = 0
-    v = d.split('d')
+    v = None
+    try:
+        v = d.split('d')
+    except:
+        print('The following command does not include a \'d\'!')
 
     if v[0] == '':
         v[0] = 1

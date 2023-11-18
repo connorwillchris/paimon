@@ -3,6 +3,8 @@ import json
 
 import diceroll
 
+from rpgs.ose.settings import PATH
+
 class Character:
     # STR INT WIS DEX CON CHA
     stats = [0, 0, 0, 0, 0, 0]
@@ -35,7 +37,7 @@ def get_stat_modifier(stat: int):
         return None
 
 def randchar():
-    json_file = open('./rpgs/ose/char_class.json')
+    json_file = open(f'{PATH}/char_class.json')
     j_char_class = json.loads(json_file.read())
 
     char = Character()
@@ -48,6 +50,9 @@ def randchar():
         char.stats[i] = diceroll.roll('3d6')
 
     # 2) randomly pick a class
+    
+    # TODO - make it so that certain classes are favored based on a classes prime req
+    # so fighters are more favorable if you have a higher STR, ect.
     char.char_class = classes[random.randint(0, 3)]
 
     # 6) note saving throws

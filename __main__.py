@@ -2,7 +2,7 @@ import settings
 import discord
 from discord.ext import commands
 
-import rpgs.ose.character as character
+import rpgs.shadowdark.character as character
 import diceroll
 
 import random
@@ -26,9 +26,8 @@ def run():
     @bot.command(
         aliases=['r'],
     )
-    async def roll(ctx, dice = 'd20'):
+    async def roll(ctx, dice):
         total = diceroll.roll(dice)
-
         await ctx.send(f'🎲 **{dice}:** {total}')
     
     @bot.command()
