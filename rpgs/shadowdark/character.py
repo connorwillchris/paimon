@@ -2,7 +2,7 @@ import json
 import random
 
 from rpgs.shadowdark.settings import *
-from googlesheets import update_data
+#from googlesheets import update_data
 
 alignments = ['L','C','N']
 
@@ -88,9 +88,6 @@ def randchar():
     # 9) randomly choose a name from a random names list
 
     # update the database with this character
-    update_data(DB_NAME, [
-        
-    ])
 
     '''
     print('\n--CHARACTER--')
