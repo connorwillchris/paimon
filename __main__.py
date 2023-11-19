@@ -26,12 +26,8 @@ def run():
     @bot.command(
         aliases=['r'],
     )
-    async def roll(ctx, dice):
-        total = 0
-        if dice:
-            total = diceroll.roll(dice)
-        else:
-            total = diceroll.roll('1d20')
+    async def roll(ctx, dice = '1d20'):
+        total = diceroll.roll(dice)
         await ctx.send(f'🎲 **{dice}:** {total}')
 
     @bot.command()
