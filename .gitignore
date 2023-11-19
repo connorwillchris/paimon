@@ -2,6 +2,8 @@
 .env
 token.json
 credentials.json
+db/
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

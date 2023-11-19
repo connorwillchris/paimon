@@ -2,10 +2,10 @@ import settings
 import discord
 from discord.ext import commands
 
+import random
+
 import rpgs.shadowdark.character as character
 import diceroll
-
-import random
 
 def run():
     intents = discord.Intents.default()
@@ -27,9 +27,11 @@ def run():
         aliases=['r'],
     )
     async def roll(ctx, dice):
-        total = diceroll.roll(dice)
+        total = 0
+        if dice:
+            total = diceroll.roll(dice)
         await ctx.send(f'🎲 **{dice}:** {total}')
-    
+
     @bot.command()
     async def randchar(ctx):
         character.randchar(ctx)
