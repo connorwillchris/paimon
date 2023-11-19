@@ -23,7 +23,7 @@ def parse(s: str):
 
     return dice_format.parse(s)
 
-def roll(d):
+def roll(d = '1d20'):
     total = 0
     parsed = parse(d)
 
