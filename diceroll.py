@@ -42,6 +42,8 @@ def roll(d: str = 'd20'):
 
     return total
 
+'''
 print(
     parse('1d20+')
 )
+'''
