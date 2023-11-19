@@ -23,10 +23,8 @@ def parse(s: str):
 
     return dice_format.parse(s)
 
-def roll(d: str = 'd20'):
+def roll(d):
     total = 0
-    v = None
-
     parsed = parse(d)
 
     roll = 0

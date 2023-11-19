@@ -30,6 +30,8 @@ def run():
         total = 0
         if dice:
             total = diceroll.roll(dice)
+        else:
+            total = diceroll.roll('1d20')
         await ctx.send(f'🎲 **{dice}:** {total}')
 
     @bot.command()
