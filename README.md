@@ -2,9 +2,17 @@
 
 Helps to automate some OSR game stuff over discord, such as random encounters, ect.
 
-## Planned featuers
+## Version
+
+Version 0.1.0-alpha
+
+### Planned featuers
 
 - [x] Dice Roller
-- [ ] Character Manager
-- [ ] Encounter managment
-- [ ] Proper Database System -- currently in progress
+- [ ] Character Manager -- in progress
+- [ ] Encounter managment and initiative
+- [ ] Proper Database System -- in progress
+
+# License
+
+Licensed under CC-BY-SA 4.0 (non-commercial)

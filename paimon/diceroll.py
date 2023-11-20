@@ -1,27 +1,24 @@
 import random
-
-from parsy import regex, string, seq, eof
+from parsy import regex, string, seq
 
 def parse(s: str):
-    number = regex(r'[1-9][0-9]*')
+    number = regex(r'[0-9]*')
     d = string('d') | string('D')
     plus = string('+')
-    spaces = string(' ')
 
-    dice_format = seq(
+    # commands do not allow whitespace!
+    dice = seq(
         number.optional(),
         d,
         number,
-        spaces.optional(),
-        # if there's a plus the number below is required
+        # if there's a plus the number, then all below is required
         seq(
             plus,
-            spaces.optional(),
             number
         ).optional()
     )
 
-    return dice_format.parse(s)
+    return dice.parse(s)
 
 def roll(d: str):
     total = 0
@@ -35,8 +32,8 @@ def roll(d: str):
     else:
         total = random.randint(1, int(parsed[2]))
     
-    if parsed[4]:
-        total += int(parsed[4][2])
+    if parsed[3]:
+        total += int(parsed[3][1])
 
     return total
 

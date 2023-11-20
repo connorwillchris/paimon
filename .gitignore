@@ -1,9 +1,7 @@
 # CUSTOM IGNORES
 .env
-token.json
-credentials.json
-db/
 .vscode
+db
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

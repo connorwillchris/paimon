@@ -2,12 +2,10 @@ import json
 import random
 
 from rpgs.shadowdark.settings import *
-#from googlesheets import update_data
 
 alignments = ['L','C','N']
 
 charclass_data = json.loads(open(f'{PATH}/json/charclass.json').read())
-#ancestry_data = json.loads(open(f'{PATH}/json/ancestry.json').read())
 titles_data = json.loads(open(f'{PATH}/json/titles.json').read())
 backgrounds_data = json.loads(open(f'{PATH}/json/backgrounds.json').read())
 
@@ -90,7 +88,7 @@ def randchar():
     # update the database with this character
 
     '''
-    print('\n--CHARACTER--')
+    print('--CHARACTER--')
     print(f'Stats: {char.stats}')
     print(f'Background: {char.background}')
     print(f'Ancestry: {char.ancestry}')
