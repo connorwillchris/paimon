@@ -8,7 +8,7 @@ Version 0.1.0-alpha
 
 ### Planned featuers
 
-- [x] Dice Roller
+- [X] Dice Roller -- refactoring changes
 - [ ] Character Manager -- in progress
 - [ ] Encounter managment and initiative
 - [ ] Proper Database System -- in progress

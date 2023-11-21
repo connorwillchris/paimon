@@ -1,1 +1,0 @@
-PATH = 'paimon/rpgs/shadowdark'
